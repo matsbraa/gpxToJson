@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="app.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Gpx to JSON converter</h1>
+      <p id="selectDesc">Select amount of coordinates to convert</p>
+      <select id="selectTime" class="select" name="intervall">
+        <option value="1">Everyone</option>
+        <option value="30">Every 30th</option>
+        <option value="60">Every 60th</option>
+      </select>
+      <input type="file" id="gpxFile"/>
+      <button type="button" id="generate" class="btn" name="button">Generate & save</button>
+    </div>
+    <script>
+      require('./convert')
+    </script>
+  </body>
+</html>
